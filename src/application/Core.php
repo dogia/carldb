@@ -32,8 +32,6 @@ The available commands are:
 
     exit ..................... Ends the program
 ';
-    const MENU_SELECTED_TABLE = '';
-    const MENU_NOT_SELECTED_TABLE = '';
 
     const LF = 1;
     const LV = 2;
