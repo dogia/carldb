@@ -1,6 +1,6 @@
 <?php
 
-namespace Dogia\Carldb\Domain;
+namespace Dogia\Carldb\Interface;
 
 use Dogia\Carldb\Application\Output\Printer;
 

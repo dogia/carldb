@@ -2,10 +2,10 @@
 
 namespace Dogia\Carldb\Interface;
 
-use Dogia\Carldb\Application\Input\InstruccionPort;
+use Dogia\Carldb\Application\Input\InstructionPort;
 use Dogia\Carldb\Domain\{Option, Error};
 
-class CommandLineInterface implements InstruccionPort {
+class CommandLineInterface implements InstructionPort {
     private string $command;
     private array  $args;
 
