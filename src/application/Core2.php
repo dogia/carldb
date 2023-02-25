@@ -3,7 +3,7 @@
 namespace Dogia\Carldb\Application;
 
 use Dogia\Carldb\Application\Input\InstructionPort;
-use Dogia\Carldb\Application\Output\Storage;
+use Dogia\Carldb\Application\Output\{Printer, Storage};
 use Dogia\Carldb\Domain\{Option, Error};
 
 class Core2
@@ -11,11 +11,13 @@ class Core2
     private bool $isTableSelected = false;
     public function __construct(
         private InstructionPort $instructionPort,
-        private Storage $storage
+        private Storage $storage,
+        private Printer $printer
     )
     {
         do
         {
+            $printer->println("Digite un comando");
             switch($instructionPort->getCommand())
             {
                 case Option::OPTION_AUTOR:
