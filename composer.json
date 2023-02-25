@@ -1,0 +1,28 @@
+{
+    "name": "dogia/carldb",
+    "description": "Proyecto taller, base de datos hecha en php",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Dogia\\Carldb\\": "src/",
+
+            "Dogia\\Carldb\\Application\\": "src/application",
+            "Dogia\\Carldb\\Application\\Input\\": "src/application/input",
+            "Dogia\\Carldb\\Application\\Output\\": "src/application/output",
+
+            "Dogia\\Carldb\\Domain\\": "src/domain",
+
+            "Dogia\\Carldb\\Interface\\": "src/interface"
+        }
+    },
+    "authors": [
+        {
+            "name": "dogia",
+            "email": "dogia@github.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "pear/console_table": "^1.3"
+    }
+}
