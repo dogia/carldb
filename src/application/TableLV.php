@@ -7,7 +7,7 @@ use Console_Table;
 class TableLV implements \Dogia\Carldb\Domain\Table
 {
     const EX_FIELD_SEPARATOR = ",";
-    const EX_REGISTER_SEPARATOR = "\n";
+    const EX_REGISTER_SEPARATOR = "";
 
     const FIELD_SEPARATOR = "|";
     const REGISTER_SEPARATOR = "\n";
